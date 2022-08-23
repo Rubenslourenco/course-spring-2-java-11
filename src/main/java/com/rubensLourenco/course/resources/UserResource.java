@@ -11,7 +11,7 @@ import com.rubensLourenco.course.entities.User;
 @RequestMapping(value = "/users")
 public class UserResource {
 
-	@GetMapping
+	@GetMapping 
 	public ResponseEntity<User> findAll() {
 		User u = new User(1L, "Maria", "maria@gmail.com", "999999", "123456");
 		return ResponseEntity.ok().body(u);
